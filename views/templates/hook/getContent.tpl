@@ -21,9 +21,13 @@
                         <select class="form-control" name="category_{$i}_4">
 
                             {foreach from=$categoriesNames item=categoryName }
-                                {if $categoryName.name != 'Accueil'}
-                                    <option value="{$categoryName}" > {$categoryName} </option>
-                                {/if}
+
+                                    {if $categoryName != 'Accueil'}
+                                       {if  $categoryName  eq $categoriesNames.category_.$i} }
+                                            <option value="{$categoryName}"> {$categoryName} </option>
+                                        {/if}
+                                    {/if}
+
                             {/foreach}
 
                         </select>

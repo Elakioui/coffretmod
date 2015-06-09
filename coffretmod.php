@@ -42,9 +42,9 @@ class coffretmod extends Module{
          $categoriesNames            = DB::getInstance()->executeS('select '._DB_PREFIX_.'category_lang.name from '._DB_PREFIX_.'category_lang');//get categories names from  database
          $categoriesNames            = $this->deleteDuplicateValues($categoriesNames);//eliminate duplicated values
 
-         $categoriesNamesOldCoffret4 = DB::getInstance()->executeS('select * from ps_coffretmod_categories cc where cc.coffret_name = coffret-4');//get already submited values for coffret 4
-         var_dump($categoriesNamesOldCoffret4);
-         die();
+         $categoriesNamesOldCoffret4 = DB::getInstance()->executeS("select * from ps_coffretmod_categories cc where cc.coffret_name = 'coffret-4' ");//get already submited values for coffret 4
+        // var_dump($categoriesNamesOldCoffret4);
+        // die();
 
          $this->context->smarty->assign('categoriesNames', $categoriesNames);//assign categories names on smarty object
          $this->context->smarty->assign('categoriesNamesOldCoffret4', $categoriesNamesOldCoffret4);//assign already submited categories names on smarty object
@@ -97,7 +97,6 @@ class coffretmod extends Module{
             }
         }else if($existed == 1 or $existed == '1')
         {
-
 
             if( DB::getInstance()->update('coffretmod_categories',$tablevalues)){
 
