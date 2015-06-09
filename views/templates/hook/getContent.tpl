@@ -2,13 +2,15 @@
     <h2>Configuration du coffret </h2>
     <!-- coffret 4 form configuration-->
     <div class="panel">
-        {if isset($confirmation)}
+
+        {if isset($confirmationUpdate) }
 
             <div>
-                <div class="alert alert-success">Mise à jour du coffret avec succée </div>
+                <div class="alert alert-success">Mise à jours réussis</div>
             </div>
 
-        {/if}
+         {/if}
+
       <div class="pannel-heading">
           <legend><img src="../img/admin/cog.gif" alt="configuration" width="16"> Configuration du coffret 4</img></legend>
       </div>
@@ -23,10 +25,16 @@
                             {foreach from=$categoriesNames item=categoryName }
 
                                     {if $categoryName != 'Accueil'}
-                                       {if  $categoryName  eq $categoriesNames.category_.$i} }
-                                            <option value="{$categoryName}"> {$categoryName} </option>
-                                        {/if}
+
+                                       {if  $categoryName  eq $categoriesNamesOldCoffret4[0].{"category_$i"}}
+
+                                            <option value="{$categoryName}" selected> {$categoryName}  </option>
+                                          {else}
+
+                                           <option value="{$categoryName}"> {$categoryName} </option>
+                                       {/if}
                                     {/if}
+
 
                             {/foreach}
 
@@ -36,9 +44,10 @@
             {/for}
 
             <div class="form-group clearfix">
-                <label class="col-lg-3">Prix du coffret 1:</label>
+                <label class="col-lg-3">Prix du coffret 1 en Euro:</label>
                 <div class="col-lg-2">
-                    <input type="text" name="price_coffret_1" placeholder="Saisir le prix en Euro" class="'form-control"/>
+                    <input type="text" name="price_coffret_1" placeholder="Saisir le prix en Euro" class="'form-control" value="{$categoriesNamesOldCoffret4[0].price}" />
+
                 </div>
             </div>
 
@@ -64,8 +73,14 @@
                         <select class="form-control" name="category_{$i}_5">
 
                             {foreach from=$categoriesNames item=categoryName }
-                                {if $categoryName.name != 'Accueil'}
-                                    <option value="{$categoryName.name}"> {$categoryName.name} </option>
+                                {if $categoryName != 'Accueil'}
+                                    {if  $categoryName  eq $categoriesNamesOldCoffret5[0].{"category_$i"}}
+
+                                        <option value="{$categoryName}" selected> {$categoryName}  </option>
+                                    {else}
+
+                                        <option value="{$categoryName}"> {$categoryName} </option>
+                                    {/if}
                                 {/if}
                             {/foreach}
 
@@ -75,15 +90,15 @@
             {/for}
 
             <div class="form-group clearfix">
-                <label class="col-lg-3">Prix du coffret 2:</label>
+                <label class="col-lg-3">Prix du coffret 2 en Euro:</label>
                 <div class="col-lg-2">
-                    <input type="text" name="price_coffret_2" placeholder="Saisir le prix en Euro" class="'form-control"/>
+                    <input type="text" name="price_coffret_2" placeholder="Saisir le prix en Euro" class="'form-control" value="{$categoriesNamesOldCoffret5[0].price}"/>
                 </div>
             </div>
 
             <div class="form-group clearfix">
                 <div class="col-lg-offset-4 col-lg-2">
-                    <input  type="submit" value="Valider" class="form-control" name="coffretmod_coffret_5"/>
+                    <input  type="submit" value="Valider" class="form-control" name="coffretmod_coffret_5" />
                 </div>
             </div>
     </div>

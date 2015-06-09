@@ -30,6 +30,7 @@ class coffretmod extends Module{
 
         $this->assignConfiguration();
         $this->processConfiguration();
+        $this->assignConfiguration();
         return $this->display(__FILE__,'getContent.tpl');
     }
 
@@ -42,14 +43,18 @@ class coffretmod extends Module{
          $categoriesNames            = DB::getInstance()->executeS('select '._DB_PREFIX_.'category_lang.name from '._DB_PREFIX_.'category_lang');//get categories names from  database
          $categoriesNames            = $this->deleteDuplicateValues($categoriesNames);//eliminate duplicated values
 
+      //  var_dump($categoriesNames);
+        //die();
+
          $categoriesNamesOldCoffret4 = DB::getInstance()->executeS("select * from ps_coffretmod_categories cc where cc.coffret_name = 'coffret-4' ");//get already submited values for coffret 4
-        // var_dump($categoriesNamesOldCoffret4);
-        // die();
+         $categoriesNamesOldCoffret5 = DB::getInstance()->executeS("select * from ps_coffretmod_categories cc where cc.coffret_name = 'coffret-5' ");//get already submited values for coffret 4
 
-         $this->context->smarty->assign('categoriesNames', $categoriesNames);//assign categories names on smarty object
-         $this->context->smarty->assign('categoriesNamesOldCoffret4', $categoriesNamesOldCoffret4);//assign already submited categories names on smarty object
+        $this->context->smarty->assign('categoriesNames', $categoriesNames);//assign categories names on smarty object
+        $this->context->smarty->assign('categoriesNamesOldCoffret4', $categoriesNamesOldCoffret4);//assign already submited categories names on smarty object (coffret 4)
+        $this->context->smarty->assign('categoriesNamesOldCoffret5', $categoriesNamesOldCoffret5);//assign already submited categories names on smarty object (coffret 5)
 
-
+         //var_dump($categoriesNamesOldCoffret5[0]['price']);
+         //die();
 
     }
 
@@ -74,6 +79,9 @@ class coffretmod extends Module{
     public function addCoffret4()
     {
 
+        $this->context->smarty->assign('confirmationInsertion', 'L\'insertion a été effectué avec succé ');//assign already submited categories names on smarty object (coffret 5)
+        $this->context->smarty->assign('badUpdate', 'error lors de validation !!! ');//assign already submited categories names on smarty object (coffret 5)
+
         $tablevalues     = $this->get4categories('4');//Get first four categories of coffret 4 
         $price_coffret_1 = (double)Tools::getValue('price_coffret_1');//Get price
 
@@ -86,24 +94,28 @@ class coffretmod extends Module{
         {
             if(DB::getInstance()->insert('coffretmod_categories', $tablevalues))
             {
+               // $this->context->smarty->assign('confirmationInsertion', 'L\'insertion a été effectué avec succé ');//assign already submited categories names on smarty object (coffret 5)
 
 
             }else
             {
-
+                //$this->context->smarty->assign('badInsertion', 'error lors de validation !!! ');//assign already submited categories names on smarty object (coffret 5)
                 //echo 'KO';
                 //die();
 
             }
-        }else if($existed == 1 or $existed == '1')
+        }else if($existed == 1 or $existed == '1')//if existed
         {
 
-            if( DB::getInstance()->update('coffretmod_categories',$tablevalues)){
 
-                //@ToDo when update is worked successfully
+            if( DB::getInstance()->update('coffretmod_categories',$tablevalues,"coffret_name = 'coffret-4' ")){
+
+                $this->context->smarty->assign('confirmationUpdate', 'La mise à jour a été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
 
             }else{
-                //@ToDo when there any error in update process
+                $this->context->smarty->assign('badUpdate', 'La mise à jour n\'a pas été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
             }
 
         }
@@ -115,7 +127,7 @@ class coffretmod extends Module{
 
     public function coffret4isExisted(){
 
-       return  DB::getInstance()->getValue(' select count(*) from '._DB_PREFIX_.'coffretmod_categories cc where cc.coffret_name = coffret-4' );
+       return  DB::getInstance()->getValue("select count(*) from "._DB_PREFIX_."coffretmod_categories cc where cc.coffret_name = 'coffret-4' " );
 
     }
 
@@ -126,15 +138,18 @@ class coffretmod extends Module{
 
         $tablevalues                 = $this->get4categories('5');//get first four categories
         $price_coffret_2             = (double)Tools::getValue('price_coffret_2');//get coffret price 2
-        $category5                   = Tools::getValue('category_5');//get category 5
+        $category5                   = Tools::getValue('category_5_5');//get category 5
         $tablevalues['category_5']   = $category5;
         $tablevalues['price']        = $price_coffret_2;
         $tablevalues['coffret_name'] = 'coffret-5';
 
-        if($this->coffret4isExisted() == 0 or $this->coffret4isExisted() == '0')
+        $existed = $this->coffret5isExisted();
+
+        if( $existed== 0 or $existed == '0')
         {
             if(DB::getInstance()->insert('coffretmod_categories', $tablevalues))
             {
+
 
                 //Action to do when a request is executed corectly
                 //echo 'ok';
@@ -143,13 +158,27 @@ class coffretmod extends Module{
                 //echo 'KO';
                 //die();
             }
+        }else if($existed == 1 or $existed == '1')
+        {
+
+            if( DB::getInstance()->update('coffretmod_categories',$tablevalues,"coffret_name = 'coffret-5' ")){
+
+                $this->context->smarty->assign('confirmationUpdate', 'La mise à jour a été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
+
+            }else{
+
+                $this->context->smarty->assign('badUpdate', 'La mise à jour n\'a pas été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
+            }
+
         }
 
 
     }
 
     public function coffret5isExisted(){
-
+        return  DB::getInstance()->getValue(" select count(*) from "._DB_PREFIX_."coffretmod_categories cc where cc.coffret_name = 'coffret-5' " );
 
     }
 
@@ -189,9 +218,12 @@ class coffretmod extends Module{
             $i++;
 
         }
+
         return array_unique($array_2);
 
     }
+
+
 
 
 
