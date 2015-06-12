@@ -5,6 +5,7 @@
  * Date: 07/06/15
  * Time: 00:08
  */
+require_once(dirname(__FILE__).'/classes/CoffretmodCoffretCategories.php');
 
 class coffretmod extends Module{
 
@@ -20,6 +21,24 @@ class coffretmod extends Module{
          parent::__construct();
 
      }
+
+     public function install(){
+
+         parent::install();
+         $this->registerHook('displayLeftColumn');
+
+         return true;
+     }
+
+    /**
+     * displaying in the hook
+     * @param $params
+     */
+
+    public function hookdisplayLeftColumn($params)
+    {
+        return $this->display(__FILE__,'displayLeftColumn.tpl');
+    }
 
     /**
      * This function serve to configure the module
@@ -83,40 +102,51 @@ class coffretmod extends Module{
         $this->context->smarty->assign('badUpdate', 'error lors de validation !!! ');//assign already submited categories names on smarty object (coffret 5)
 
         $tablevalues     = $this->get4categories('4');//Get first four categories of coffret 4 
-        $price_coffret_1 = (double)Tools::getValue('price_coffret_1');//Get price
+        $price_coffret_1 = Tools::getValue('price_coffret_1');//Get price
 
         $tablevalues['price']        = $price_coffret_1;
         $tablevalues['coffret_name'] = 'coffret-4';
 
         $existed = $this->coffret4isExisted();//knowing if the coffret exist already
 
-        if($existed == 0 or $existed == '0')
+        if(Validate::isFloat($tablevalues['price']) )
         {
-            if(DB::getInstance()->insert('coffretmod_categories', $tablevalues))
+            $tablevalues['price']= (float) $tablevalues['price'];
+
+            if ($existed == 0 or $existed == '0')
             {
-               // $this->context->smarty->assign('confirmationInsertion', 'L\'insertion a été effectué avec succé ');//assign already submited categories names on smarty object (coffret 5)
 
 
-            }else
+                if (DB::getInstance()->insert('coffretmod_categories', $tablevalues)) {
+                    // $this->context->smarty->assign('confirmationInsertion', 'L\'insertion a été effectué avec succé ');//assign already submited categories names on smarty object (coffret 5)
+
+
+                } else {
+                    //$this->context->smarty->assign('badInsertion', 'error lors de validation !!! ');//assign already submited categories names on smarty object (coffret 5)
+                    //echo 'KO';
+                    //die();
+
+                }
+
+
+            } else if ($existed == 1 or $existed == '1')//if existed
             {
-                //$this->context->smarty->assign('badInsertion', 'error lors de validation !!! ');//assign already submited categories names on smarty object (coffret 5)
-                //echo 'KO';
-                //die();
+
+                if (DB::getInstance()->update('coffretmod_categories', $tablevalues, "coffret_name = 'coffret-4' ")) {
+
+                    $this->context->smarty->assign('confirmationUpdate', 'La mise à jour a été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
+
+                } else {
+
+                    $this->context->smarty->assign('badUpdate', 'La mise à jour n\'a pas été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
+                }
 
             }
-        }else if($existed == 1 or $existed == '1')//if existed
-        {
+        }  else{
 
-
-            if( DB::getInstance()->update('coffretmod_categories',$tablevalues,"coffret_name = 'coffret-4' ")){
-
-                $this->context->smarty->assign('confirmationUpdate', 'La mise à jour a été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
-
-
-            }else{
-                $this->context->smarty->assign('badUpdate', 'La mise à jour n\'a pas été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
-
-            }
+            $this->context->smarty->assign('error_price', 'veuiller saisir un bon prix ');//assign already submited categories names on smarty object (coffret 5)
 
         }
 
@@ -137,45 +167,56 @@ class coffretmod extends Module{
     public function addCoffret5(){
 
         $tablevalues                 = $this->get4categories('5');//get first four categories
-        $price_coffret_2             = (double)Tools::getValue('price_coffret_2');//get coffret price 2
+        $price_coffret_2             = Tools::getValue('price_coffret_2');//get coffret price 2
         $category5                   = Tools::getValue('category_5_5');//get category 5
+
         $tablevalues['category_5']   = $category5;
         $tablevalues['price']        = $price_coffret_2;
         $tablevalues['coffret_name'] = 'coffret-5';
 
         $existed = $this->coffret5isExisted();
 
-        if( $existed== 0 or $existed == '0')
-        {
-            if(DB::getInstance()->insert('coffretmod_categories', $tablevalues))
-            {
+        if(Validate::isFloat($tablevalues['price']) ) {
+
+            $tablevalues['price']= (float)$tablevalues['price'];
+
+            if ($existed == 0 or $existed == '0') {
+                if (DB::getInstance()->insert('coffretmod_categories', $tablevalues)) {
 
 
-                //Action to do when a request is executed corectly
-                //echo 'ok';
-                //die();
-            }else{
-                //echo 'KO';
-                //die();
+                    //Action to do when a request is executed corectly
+                    //echo 'ok';
+                    //die();
+                } else {
+                    //echo 'KO';
+                    //die();
+                }
+            } else if ($existed == 1 or $existed == '1') {
+
+                if (DB::getInstance()->update('coffretmod_categories', $tablevalues, "coffret_name = 'coffret-5' ")) {
+
+                    $this->context->smarty->assign('confirmationUpdate', 'La mise à jour a été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
+
+                } else {
+
+                    $this->context->smarty->assign('badUpdate', 'La mise à jour n\'a pas été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
+
+                }
+
             }
-        }else if($existed == 1 or $existed == '1')
-        {
+        }else{
 
-            if( DB::getInstance()->update('coffretmod_categories',$tablevalues,"coffret_name = 'coffret-5' ")){
-
-                $this->context->smarty->assign('confirmationUpdate', 'La mise à jour a été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
-
-
-            }else{
-
-                $this->context->smarty->assign('badUpdate', 'La mise à jour n\'a pas été éffectué avec succée ');//assign already submited categories names on smarty object (coffret 5)
-
-            }
+            $this->context->smarty->assign('error_price', 'veuiller saisir un bon prix ');//assign already submited categories names on smarty object (coffret 5)
 
         }
 
 
     }
+
+    /** Knowing if coffret 5 exited
+     * @return mixed
+     */
 
     public function coffret5isExisted(){
         return  DB::getInstance()->getValue(" select count(*) from "._DB_PREFIX_."coffretmod_categories cc where cc.coffret_name = 'coffret-5' " );
@@ -212,6 +253,7 @@ class coffretmod extends Module{
 
         $array_2 = array();
         $i= 1;
+
         foreach($array as $value){
 
             $array_2['category_'.$i] =   $value['name'];

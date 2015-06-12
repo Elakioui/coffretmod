@@ -43,10 +43,23 @@
                 </div>
             {/for}
 
+
+
+                {if isset( $error_price ) }
+                    <div class="col-lg-offset-3 col-lg-7  alert alert-danger">
+                        Mauvais prix !!
+                    </div>
+
+                {/if}
+
+
             <div class="form-group clearfix">
                 <label class="col-lg-3">Prix du coffret 1 en Euro:</label>
                 <div class="col-lg-2">
+
                     <input type="text" name="price_coffret_1" placeholder="Saisir le prix en Euro" class="'form-control" value="{$categoriesNamesOldCoffret4[0].price}" />
+
+
 
                 </div>
             </div>
@@ -88,6 +101,14 @@
                     </div>
                 </div>
             {/for}
+
+            {if isset( $error_price ) }
+                <div class="col-lg-offset-3 col-lg-7  alert alert-danger">
+                    Mauvais prix !!
+                </div>
+
+            {/if}
+
 
             <div class="form-group clearfix">
                 <label class="col-lg-3">Prix du coffret 2 en Euro:</label>
