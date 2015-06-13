@@ -12,8 +12,8 @@ class coffretmod extends Module{
      public function __construct()
      {
          $this->name        = 'coffretmod';
-         $this->displayName = 'Coffret  4/5';
-         $this->description = 'Coffret de 4 et 5 description';
+         $this->displayName = $this->l('Coffret  4/5');
+         $this->description = $this->l('Coffret de 4 et 5 description');
          $this->version     = '0.1';
          $this->author      = 'El akioui zouhaire';
          $this->tab         = 'front_office_features';

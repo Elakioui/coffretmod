@@ -25,44 +25,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="coffret.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="coffret.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/front/coffret.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.375" vertical-offset="90" max-vertical-offset="930">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5169082" vertical-offset="444" max-vertical-offset="1425">
+              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding>
-                <element signature="e#6#84#0#PHP" expanded="true" />
+                <element signature="e#6#86#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coffret4.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/templates/front/coffret4.tpl">
+      <file leaf-file-name="coffret-4.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/templates/front/coffret-4.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="420">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoffretmodCoffretCategories.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="displayLeftColumn.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/templates/hook/displayLeftColumn.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="345">
+              <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoffretmodCoffretCategories.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/CoffretmodCoffretCategories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1955836" vertical-offset="386" max-vertical-offset="1020">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state vertical-scroll-proportion="-14.375" vertical-offset="615" max-vertical-offset="3600">
+              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
               <folding>
                 <element signature="e#6#104#0#PHP" expanded="true" />
-                <marker date="1434151182930" expanded="true" signature="1816:1829" placeholder="select * fro..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1830" placeholder="select * fro..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1844" placeholder="select * fro..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories where..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1889" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1896" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
-                <marker date="1434151182930" expanded="true" signature="1816:1899" placeholder="select * fro.._DB_PREFIX_coffretmod_categories where..." />
+                <marker date="1434208933737" expanded="true" signature="1833:1913" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
+                <marker date="1434208933737" expanded="true" signature="2824:3482" placeholder="select pl.na..ps_product..." />
               </folding>
             </state>
           </provider>
@@ -83,13 +86,14 @@
         <option value="$PROJECT_DIR$/views/css/jquery.bxslider.css" />
         <option value="$PROJECT_DIR$/views/js/coffret4.js" />
         <option value="$PROJECT_DIR$/controllers/front/coffret4.php" />
-        <option value="$PROJECT_DIR$/views/templates/hook/displayLeftColumn.tpl" />
         <option value="$PROJECT_DIR$/classes/coffretmodCoffretCategories.php" />
         <option value="$PROJECT_DIR$/views/templates/hook/getContent.tpl" />
         <option value="$PROJECT_DIR$/coffretmod.php" />
-        <option value="$PROJECT_DIR$/controllers/front/coffret.php" />
-        <option value="$PROJECT_DIR$/views/templates/front/coffret4.tpl" />
         <option value="$PROJECT_DIR$/classes/CoffretmodCoffretCategories.php" />
+        <option value="$PROJECT_DIR$/views/templates/hook/displayLeftColumn.tpl" />
+        <option value="$PROJECT_DIR$/views/templates/front/coffret4.tpl" />
+        <option value="$PROJECT_DIR$/views/templates/front/coffret-4.tpl" />
+        <option value="$PROJECT_DIR$/controllers/front/coffret.php" />
       </list>
     </option>
   </component>
@@ -313,15 +317,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -349,19 +353,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17391305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11082694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -389,10 +393,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/controllers/front/coffret.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="930">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/templates/front/coffret-4.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/CoffretmodCoffretCategories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#104#0#PHP" expanded="true" />
+            <marker date="1434208933737" expanded="true" signature="1833:1913" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
+            <marker date="1434208933737" expanded="true" signature="2824:3482" placeholder="select pl.na..ps_product..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/front/coffret.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="810">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -403,15 +437,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#104#0#PHP" expanded="true" />
-            <marker date="1434151182930" expanded="true" signature="1816:1829" placeholder="select * fro..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1830" placeholder="select * fro..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1844" placeholder="select * fro..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories where..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1889" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1896" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1899" placeholder="select * fro.._DB_PREFIX_coffretmod_categories where..." />
+            <marker date="1434208933737" expanded="true" signature="1833:1913" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
+            <marker date="1434208933737" expanded="true" signature="2824:3482" placeholder="select pl.na..ps_product..." />
           </folding>
         </state>
       </provider>
@@ -422,10 +449,10 @@
           <caret line="159" column="80" selection-start-line="159" selection-start-column="80" selection-end-line="159" selection-end-column="101" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
           </folding>
         </state>
       </provider>
@@ -451,7 +478,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="570">
           <caret line="28" column="89" selection-start-line="28" selection-start-column="89" selection-end-line="28" selection-end-column="89" />
           <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -476,10 +503,10 @@
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
           </folding>
         </state>
       </provider>
@@ -490,10 +517,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
           </folding>
         </state>
       </provider>
@@ -512,10 +539,10 @@
           <caret line="41" column="25" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="25" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
           </folding>
         </state>
       </provider>
@@ -541,10 +568,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
           </folding>
         </state>
       </provider>
@@ -570,10 +597,10 @@
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
           </folding>
         </state>
       </provider>
@@ -636,9 +663,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coffretmod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2657005" vertical-offset="0" max-vertical-offset="4080">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="false" />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+            <marker date="1434204525883" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/templates/hook/getContent.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73429954" vertical-offset="1104" max-vertical-offset="1980">
+        <state vertical-scroll-proportion="1.6763285" vertical-offset="519" max-vertical-offset="1980">
           <caret line="104" column="39" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
           <folding />
         </state>
@@ -646,59 +687,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/templates/hook/displayLeftColumn.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4022082" vertical-offset="0" max-vertical-offset="634">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coffretmod.php">
+    <entry file="file://$PROJECT_DIR$/views/templates/front/coffret-4.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.7826085" vertical-offset="0" max-vertical-offset="4080">
-          <caret line="203" column="0" selection-start-line="202" selection-start-column="20" selection-end-line="203" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select * fro..ps_coffretmod_categories..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434132784102" expanded="true" signature="-1:-1" placeholder="select count.._DB_PREFIX_coffretmod_categories cc..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/front/coffret.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375" vertical-offset="90" max-vertical-offset="930">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/templates/front/coffret4.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="420">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/CoffretmodCoffretCategories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1955836" vertical-offset="386" max-vertical-offset="1020">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state vertical-scroll-proportion="-14.375" vertical-offset="615" max-vertical-offset="3600">
+          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
           <folding>
             <element signature="e#6#104#0#PHP" expanded="true" />
-            <marker date="1434151182930" expanded="true" signature="1816:1829" placeholder="select * fro..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1830" placeholder="select * fro..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1844" placeholder="select * fro..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories where..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1888" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1889" placeholder="select * fro.._DB_PREFIX_coffretmod_categories cc..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1896" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
-            <marker date="1434151182930" expanded="true" signature="1816:1899" placeholder="select * fro.._DB_PREFIX_coffretmod_categories where..." />
+            <marker date="1434208933737" expanded="true" signature="1833:1913" placeholder="select * fro.._DB_PREFIX_coffretmod_categories  where..." />
+            <marker date="1434208933737" expanded="true" signature="2824:3482" placeholder="select pl.na..ps_product..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/front/coffret.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5169082" vertical-offset="444" max-vertical-offset="1425">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

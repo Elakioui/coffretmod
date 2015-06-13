@@ -1,5 +1,5 @@
-{assign var=params value=['module_action' => 'initCoffret4',
-                             'coffret_name' => 'coffret4'
+{assign var=params value=['module_action' => 'initCoffret',
+                             'coffret_name' => 'coffret-4'
                              ]
 }
 
